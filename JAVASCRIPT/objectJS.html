@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT IN JS</title>
+</head>
+<body>
+    <script>
+        //OBJECT IN JS : collection (pair) of keys(properties) and its value
+
+        //create an object using literal way
+
+         let student={
+            name:"indu sharma",
+            age:18,
+            ismarried:false,
+            address:{
+                streetno:23,
+                area:"indirapuram",
+                city:"GZB",
+                pincode:201009
+            },
+            course:"btech",
+            branch:"CSE",
+            year:2026,
+            getinfo:function(){
+                return "my education detail is"+student.branch+" "+student.year;
+            },
+            subjects:["math","hindi","science","english"],
+            examdone:null
+         };
+         //access objects keys or properties
+         console.log(student);
+         console.log(student.address);//object
+         console.log(student.getinfo);//function
+         console.log(student.subjects[2]);//array
+         console.log(typeof(student));
+
+         //find any key in your object
+         console.log('name'in student);
+
+         //delete any key in object
+         console.log(delete student.name);
+         console.log(student);
+
+         //find length of object
+         let keyslength=Object.keys(student);
+         console.log(keyslength.length);
+
+         //iterate objects keys(properties)
+         for(let i=0;i<keyslength.length;i++){
+            console.log(student[keyslength[i]]);
+         }
+
+         //iterate objects keys using for in loop
+         for(let x in student){
+            console.log(student[x]); 
+         }
+         
+         //create an object using new keyword
+         let myinfo=new Object();
+         myinfo.name="vikas";
+         myinfo.age=25;
+         myinfo.city="delhi";
+         myinfo.address=null;
+         myinfo.mob=9625079495;
+         //access objects keys using []
+         console.log(myinfo['name'] );
+    </script>
+</body>
+</html>
