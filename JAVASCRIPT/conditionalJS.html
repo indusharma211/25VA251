@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDITIONAL STATEMENTS IN JAVASCRIPT</title>
+</head>
+<body>
+    <SCRIPT>
+        /*CONDITIONAL STATEMENTS-They control the flow of execution by running different code blocks 
+         depending on whether a condition is true or false*/
+
+         //if.....
+         let age=23;
+         if(age<=18){
+            console.log("not Eligible for voting");    
+         }
+         console.log("Eligible for voting");
+
+         //if-else......
+         let myage=17;
+         if(myage>=18){
+            console.log("you can vote")
+         }
+         else{
+            console.log("you cannot for vote ");
+         }
+         //switch statement...evaluates an expression and executes the code block of the matching case value
+         let grade="c";
+         switch(grade){
+            case'A':result="first division";
+            break;
+            case 'b':result="second division";
+            break;
+            case 'c':result="third division";
+            break;
+            default:result="fail";
+         }
+         console.log(result);
+
+         //if-else-if....
+         let marks=35;
+         if(marks>90){
+            console.log("first grade");
+         }
+         else if (marks>33&&marks<60){
+            console.log('second grade');
+         }
+         else if(marks<=33){
+            console.log("third grade");
+         }
+         else{
+            console.log("fail");
+         }
+    </SCRIPT>
+    
+</body>
+</html>

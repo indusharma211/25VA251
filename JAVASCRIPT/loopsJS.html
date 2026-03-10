@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS IN JS</title>
+</head>
+<body>
+    <script>
+
+        for loop.....
+        let studentlist=["vikas","viney","rahul","abhishek","harsh"];
+        for(let i=0;i<studentlist.length;i++){
+            console.log(studentlist[i]);
+        }
+        //while loop....
+        let i=0;
+        while(i<studentlist.length){
+            console.log(studentlist[i]);
+            i++;
+        }
+        /*for of loop....The for...of loop in JavaScript is used to iterate over the values
+        of iterable objects like arrays, strings, maps, sets, and more.*/
+        for(let x of studentlist){
+            console.log(x);
+        }
+        /*for in loop.......The for...in loop in JavaScript is used to iterate 
+        over the enumerable properties of an object, including inherited properties.
+        Although for...in can be used to iterate over arrays, it is not recommended because 
+        it iterates over all enumerable properties, 
+        including those that are inherited. The order of iteration is not guaranteed.*/
+
+
+    </script>
+</body>
+</html>
