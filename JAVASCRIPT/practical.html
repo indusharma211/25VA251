@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Event Example</title>
+    <style>
+        /* Initially hide the paragraph */
+        #hiddenPara {
+            display: none;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="showBtn">Click to See Paragraph</button>
+    <p id="hiddenPara">This text was hidden. Hover over me!</p>
+
+    <script>
+        const btn = document.getElementById('showBtn');
+        const para = document.getElementById('hiddenPara');
+
+        // 1. Show paragraph on click event
+        btn.onclick = function() {
+            para.style.display = 'block'; //
+        };
+
+        // 2. Change text color on mouse hover (mouseover)
+        para.onmouseover = function() {
+            para.style.color = 'red'; //
+        };
+
+        // 3. Reset text color when mouse leaves (mouseout)
+        para.onmouseout = function() {
+            para.style.color = 'black'; //
+        };
+    </script>
+
+</body>
+</html>
